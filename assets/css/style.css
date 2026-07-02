@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1a1a1a;
+}
+.topbar {
+    background: #1f3864;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    flex-wrap: wrap;
+}
+.topbar-brand { font-weight: bold; font-size: 1.2rem; }
+.topbar-nav a, .topbar-nav span {
+    color: #fff;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 0.92rem;
+}
+.topbar-nav a:hover { text-decoration: underline; }
+.container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+h1, h2 { color: #1f3864; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e5e5e5; font-size: 0.92rem; }
+th { background: #1f3864; color: #fff; }
+tr:nth-child(even) td { background: #f9fafb; }
+
+form.form-box { max-width: 420px; }
+label { display: block; margin-top: 12px; font-weight: 600; font-size: 0.88rem; }
+input, select { width: 100%; padding: 9px; margin-top: 4px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.95rem; }
+button, .btn {
+    background: #1f3864;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.92rem;
+    margin-top: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+button:hover, .btn:hover { background: #16294d; }
+.btn-secondary { background: #6b7280; }
+
+.alert { padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; font-size: 0.9rem; }
+.alert-success { background: #dcfce7; color: #166534; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+
+.badge { padding: 3px 9px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; }
+.badge-teste { background: #fef3c7; color: #92400e; }
+.badge-ok, .badge-ativo { background: #dcfce7; color: #166534; }
+.badge-bloqueado, .badge-nao_aprovado { background: #fee2e2; color: #991b1b; }
+
+.login-wrap { display: flex; align-items: center; justify-content: center; min-height: 80vh; }
+.login-box { background: #fff; padding: 36px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; max-width: 380px; }
+.login-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.login-tabs a { flex: 1; text-align: center; padding: 8px; border-radius: 6px; background: #eee; text-decoration: none; color: #333; font-size: 0.88rem; }
+.login-tabs a.active { background: #1f3864; color: #fff; }
